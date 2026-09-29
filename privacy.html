@@ -21,19 +21,21 @@
     </header>
 
     <main class="policy-page">
-      <div class="policy-heading">
-        <p class="eyebrow">Rounds for Apple Watch</p>
-        <h1>Privacy Policy</h1>
-        <p class="updated">Last updated July 31, 2026</p>
-      </div>
+    <div class="policy-heading">
+      <p class="eyebrow">Rounds for Apple Watch</p>
+      <h1>Privacy Policy</h1>
+      <p class="updated">Last updated September 29, 2026</p>
+    </div>
 
-      <div class="privacy-summary">
-        <strong>The short version</strong>
-        <p>
-          Rounds has no accounts, advertising, analytics, or tracking. We do not
-          collect or receive your personal information or Health data.
-        </p>
-      </div>
+    <div class="privacy-summary">
+      <strong>The short version</strong>
+      <p>
+        Rounds uses an anonymous installation ID for community features and moderation.
+        You can optionally enable analytics. Exercise and feature requests may include
+        an email address if you choose to provide one. We do not collect your personal
+        information or Health data. There are no accounts, advertising, or tracking.
+      </p>
+    </div>
 
       <article class="policy-content">
         <section>
@@ -47,11 +49,66 @@
         </section>
 
         <section>
+          <h2>Installation identity</h2>
+          <p>
+            Rounds creates an anonymous installation ID (DeviceID) for your installation,
+            registered through Apple App Attest. This identifier supports community features,
+            moderation, and per-installation action counts. It does not identify you personally
+            and is not linked to an account.
+          </p>
+          <p>
+            The installation ID is created automatically and is required for the app to function.
+          </p>
+        </section>
+
+        <section>
+          <h2>Optional analytics</h2>
+          <p>
+            You can choose to enable analytics in Rounds settings. When enabled, Rounds collects:
+          </p>
+          <ul>
+            <li>Screen views and exercise selections</li>
+            <li>Routine operations (creating, editing, deleting routines)</li>
+            <li>Workout session timing and completion</li>
+          </ul>
+          <p>
+            Analytics does not collect free-text input, personal information, or HealthKit values.
+            Analytics is off by default. You can enable or disable it at any time in settings.
+          </p>
+          <p>
+            Raw analytics events linked to your installation ID are kept for 365 days. Aggregated
+            statistics are formed only from groups of 20 or more installations and may be kept
+            for up to 5 years. If you disable analytics, identifiable event data is removed, but
+            sealed aggregates are retained.
+          </p>
+        </section>
+
+        <section>
+          <h2>Exercise and feature requests</h2>
+          <p>
+            When you submit an exercise or feature request through the app, Rounds sends the
+            request content to our server. You may optionally provide an email address for a
+            reply by checking the consent checkbox.
+          </p>
+          <p>
+            If you provide an email address, we use it only to respond to your request and do
+            not use it for marketing or share it with third parties.
+          </p>
+          <p>
+            Submitted requests are kept for 30 days, or until the request is closed out,
+            whichever comes first.
+          </p>
+        </section>
+
+        <section>
           <h2>Where your information is stored</h2>
           <p>
-            Workout state, preferences, and recent results are stored locally on
-            your Apple Watch. Rounds does not operate a server and does not transmit
-            this information to us.
+            Workout state, preferences, and recent results are stored locally on your Apple Watch.
+          </p>
+          <p>
+            Installation identity, analytics events (if enabled), and exercise or feature requests
+            are transmitted to and stored on our server, hosted by Supabase. Supabase is the only
+            third-party data processor used by Rounds.
           </p>
         </section>
 
@@ -74,19 +131,32 @@
         <section>
           <h2>Third parties and tracking</h2>
           <p>
-            Rounds contains no third-party advertising, analytics, tracking, or
-            social networking software. It does not create a user profile or use
-            information to track you across apps or websites.
+            Rounds contains no third-party advertising or tracking software. It does not
+            create a user profile or use information to track you across apps or websites.
+          </p>
+          <p>
+            Rounds uses Supabase to host our backend server. Analytics data and exercise
+            or feature requests are processed by Supabase in accordance with their terms.
           </p>
         </section>
 
         <section>
           <h2>Deleting information</h2>
           <p>
-            Choose Discard Workout before saving to discard the active workout.
-            Removing Rounds from your Apple Watch removes information stored by the
-            app. Workouts already saved to Apple Health remain there until you delete
-            them through Apple Health.
+            Choose Discard Workout before saving to discard the active workout. Removing
+            Rounds from your Apple Watch removes information stored locally by the app.
+            Workouts already saved to Apple Health remain there until you delete them
+            through Apple Health.
+          </p>
+          <p>
+            Disabling analytics in settings removes identifiable analytics event data from
+            our server, though sealed aggregate statistics remain. Your installation ID and
+            any submitted exercise or feature requests remain on our server after removing
+            the app.
+          </p>
+          <p>
+            You can request deletion of your data by emailing
+            <a href="mailto:support@sweatfocus.com?subject=Rounds%20Data%20Deletion">support@sweatfocus.com</a>.
           </p>
         </section>
 
