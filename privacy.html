@@ -4,9 +4,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#070807">
-    <meta name="description" content="Privacy Policy for Rounds on Apple Watch.">
+    <meta name="description" content="Privacy Policy for Rounds on iPhone and Apple Watch.">
     <title>Privacy Policy — Rounds</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+      .policy-content ul { margin: 16px 0 0; padding-left: 22px; color: var(--secondary); }
+      .policy-content li + li { margin-top: 8px; }
+      .policy-content p + ul, .policy-content ul + p { margin-top: 16px; }
+      .policy-content h3 { margin: 26px 0 0; font-size: 19px; }
+      .policy-content h3 + ul { margin-top: 10px; }
+    </style>
   </head>
   <body>
     <header class="site-header">
@@ -22,71 +29,167 @@
 
     <main class="policy-page">
       <div class="policy-heading">
-        <p class="eyebrow">Rounds for Apple Watch</p>
+        <p class="eyebrow">Rounds for iPhone and Apple Watch</p>
         <h1>Privacy Policy</h1>
-        <p class="updated">Last updated July 31, 2026</p>
+        <p class="updated">Effective October 23, 2026</p>
       </div>
 
       <div class="privacy-summary">
         <strong>The short version</strong>
         <p>
-          Rounds has no accounts, advertising, analytics, or tracking. We do not
-          collect or receive your personal information or Health data.
+          Rounds has no account, no advertising, and no tracking. Your workouts and
+          history stay on your devices. Product analytics is off unless you choose
+          to share it, and you can turn it off and delete it at any time. If you
+          send feedback, only the text you write is sent. Rounds never reads or
+          transmits your Apple Health data.
         </p>
       </div>
 
       <article class="policy-content">
         <section>
-          <h2>Information handled by Rounds</h2>
+          <h2>What stays on your devices</h2>
           <p>
-            Rounds handles the workout duration you choose, completed round count
-            and round timestamps, workout timing, and your most recently selected
-            duration. This information is used only to run the workout, recover an
-            interrupted session, and keep recent completed results on your device.
+            Rounds runs on iPhone and Apple Watch. Your workouts, your workout
+            history, your preferences, and any username you choose are stored on your
+            iPhone and, for workouts that run on the Watch, your Apple Watch. The two
+            devices sync with each other. There is no account, password, or sign-in,
+            and Rounds does not ask for your name or email address.
           </p>
         </section>
 
         <section>
-          <h2>Where your information is stored</h2>
+          <h2>Product analytics (optional)</h2>
           <p>
-            Workout state, preferences, and recent results are stored locally on
-            your Apple Watch. Rounds does not operate a server and does not transmit
-            this information to us.
+            The first time you open Rounds, it asks whether to share product
+            analytics. Choosing “Continue without analytics” sends nothing, and the
+            app works the same either way. Nothing is collected before you opt in.
+          </p>
+          <p>If you opt in, Rounds records and sends these kinds of events:</p>
+          <ul>
+            <li>Which app screens you open, such as Discover, My Workouts, the workout builder, and Settings.</li>
+            <li>Exercise filters and which catalog exercises you pick.</li>
+            <li>Creating, editing, deleting, importing, and sharing your workouts, with the workout type (AMRAP, EMOM, or straight sets).</li>
+            <li>Viewing, saving, and sharing workouts in the public library, and where in the app they appeared.</li>
+            <li>Workout sessions: start, pause, resume, set or round counts, and finish or interruption, including the workout type, elapsed time, and the number of sets and rounds you recorded. These come from the Rounds timer, not from Apple Health.</li>
+            <li>Opening or sending a feedback form (the fact that you did so, never its text).</li>
+          </ul>
+          <p>
+            Analytics never includes Apple Health data, your username, search text,
+            feedback text, or names you give to custom exercises.
+          </p>
+          <p>
+            Events are linked to a random installation ID, not to your name or
+            Apple ID. The ID is created on your iPhone using Apple’s App Attest
+            service, is specific to Rounds, and cannot be used to identify you in
+            other apps. It is not the advertising identifier. Events are saved on
+            your devices and sent to our servers when you are connected. Apple Watch
+            events are passed through your iPhone.
+          </p>
+          <p>
+            Analytics data is processed and stored by Supabase, our hosting
+            provider, acting for us.
+          </p>
+          <h3>How long analytics data is kept</h3>
+          <ul>
+            <li>Raw events: up to 365 days.</li>
+            <li>Daily summaries that still carry your installation ID: 13 months.</li>
+            <li>Monthly summaries, which contain only counts and no installation IDs: 5 years.</li>
+          </ul>
+          <h3>Withdrawing and deleting</h3>
+          <p>
+            Open Account (the person button at the top of Discover and Library) and
+            choose “Turn off and delete analytics data.” Rounds stops collecting,
+            clears events waiting on your devices, and asks our servers to delete
+            the data linked to your installation. If you are offline, the deletion
+            is queued and completes when you reconnect. Monthly summaries are
+            anonymous totals that cannot be traced back to you, so they remain until
+            they expire. You can opt in again later.
+          </p>
+        </section>
+
+        <section>
+          <h2>Feature ideas, bug reports, and exercise requests</h2>
+          <p>
+            Rounds lets you send a feature idea, a bug report, or a request for a
+            new exercise. We receive only the text you type and the category or
+            equipment you pick, along with a randomly generated request ID. Please do
+            not include personal information in these messages. Rounds does not
+            collect your email address and cannot reply to you, so these requests are
+            one-way.
+          </p>
+          <p>
+            Request text is stored in our feedback database, hosted by Supabase, for
+            up to 180 days. A request is copied into the developer’s private issue
+            tracker on GitHub so it can be tracked, and it is reviewed with the help
+            of AI: the text is sent to Anthropic’s Claude to summarize and sort it.
+            A person reviews any resulting change. You can withdraw a feature idea or
+            bug report from within the app, which deletes it from the feedback
+            database.
+          </p>
+          <p>
+            To limit abuse, our servers apply rate limits. For this, your IP address
+            is converted into a salted hash and only the hash is used. The Rounds
+            backend does not store raw IP addresses. Our hosting providers may keep
+            standard connection logs under their own policies.
           </p>
         </section>
 
         <section>
           <h2>Apple Health</h2>
           <p>
-            With your permission, Rounds uses Apple HealthKit to run a live indoor
-            cross-training session and save the completed workout to Apple Health.
-            Rounds requests permission to write workouts and does not request read
-            access to your Health data. Apple Health manages the saved workout and
-            any related workout metrics under your device and iCloud settings.
+            With your permission, the Rounds Watch app uses Apple HealthKit to run a
+            workout session and save your completed workout to Apple Health. Rounds
+            asks for permission to write workouts and does not read your existing
+            Health data. Rounds does not transmit Health data to us or anyone else.
+            Apple Health manages saved workouts under your device and iCloud
+            settings.
           </p>
           <p>
-            We do not receive, sell, use for advertising, or share your Health data.
             You can manage Rounds’ Health permission in the Health app and delete a
             saved workout from Apple Health at any time.
           </p>
         </section>
 
         <section>
-          <h2>Third parties and tracking</h2>
+          <h2>No advertising, tracking, or sale of data</h2>
           <p>
-            Rounds contains no third-party advertising, analytics, tracking, or
-            social networking software. It does not create a user profile or use
-            information to track you across apps or websites.
+            Rounds contains no advertising and no third-party analytics, advertising,
+            or social networking SDKs. It does not track you across apps or websites,
+            does not build advertising profiles, and does not sell or rent your data.
+            The only service providers that handle data are Supabase (hosting), and,
+            for feedback you choose to send, GitHub (issue tracking) and Anthropic
+            (AI-assisted review).
           </p>
         </section>
 
         <section>
-          <h2>Deleting information</h2>
+          <h2>Deleting your information</h2>
           <p>
-            Choose Discard Workout before saving to discard the active workout.
-            Removing Rounds from your Apple Watch removes information stored by the
-            app. Workouts already saved to Apple Health remain there until you delete
-            them through Apple Health.
+            Deleting a workout removes it from Rounds on your devices. Removing
+            Rounds from your iPhone and Apple Watch removes the information stored by
+            the app. Analytics can be deleted as described above. Workouts already
+            saved to Apple Health stay there until you delete them in Apple Health.
+          </p>
+        </section>
+
+        <section>
+          <h2>Children</h2>
+          <p>
+            Rounds is not directed to children under 13, and we do not knowingly
+            collect personal information from children. If you believe a child has
+            sent us personal information, contact us and we will delete it.
+          </p>
+        </section>
+
+        <section>
+          <h2>Your choices and data requests</h2>
+          <p>
+            You can turn analytics on or off and delete analytics data in the app at
+            any time. For any other question or request about your data, including
+            access or deletion of a feedback submission, contact us below. Because
+            Rounds has no account and does not collect your name or email, we may ask
+            for details such as the approximate date and text of a submission to find
+            it.
           </p>
         </section>
 
